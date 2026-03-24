@@ -56,7 +56,7 @@ export function StartFermentModal({ open, pickId, onClose }: Props) {
     if (isUnclean) {
       addBatchAction(batch.id, {
         id: uid(),
-        type: 'Tank Cleaning',
+        type: 'Clean',
         date: form.startDate,
         notes: 'Auto-created: vessel was marked unclean at ferment start',
       })
